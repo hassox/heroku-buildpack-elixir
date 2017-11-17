@@ -39,8 +39,8 @@ function install_erlang() {
   cp -R $(erlang_build_path) $(erlang_path)
   PATH=$(erlang_path)/bin:$PATH
   echo "Erlang path"
-  echo `ls $(erlang_path)`
-  echo `ls $(erlang_path)/bin`
+  echo `ls -la $(erlang_build_path)`
+  echo `ls -la $(erlang_path)/bin`
 }
 
 function erlang_changed() {
