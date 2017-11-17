@@ -17,7 +17,7 @@ function download_erlang() {
     curl -s ${erlang_package_url} -o ${cache_path}/$(erlang_tarball) || exit 1
     echo "WAS SUCCESSFULLY DOWNLOADED? $?"
     echo `ls -la ${cache_path}`
-    echo `cat ${cache_path/$(erlang_tarball)}`
+    cat ${cache_path}/$(erlang_tarball)
   else
     output_section "Using cached Erlang ${erlang_version}"
   fi
