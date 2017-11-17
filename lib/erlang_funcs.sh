@@ -31,7 +31,7 @@ function install_erlang() {
 
   rm -rf $(erlang_build_path)
   mkdir -p $(erlang_build_path)
-  tar zxf ${cache_path}/$(erlang_tarball) -C $(erlang_build_path) --strip-components=1
+  tar zxf ${cache_path}/$(erlang_tarball) -C $(erlang_build_path)# --strip-components=1
 
   echo "THE BUILD PATH HAS: "
   echo `ls -la $(erlang_build_path)`
