@@ -34,6 +34,8 @@ function install_erlang() {
   tar zxf ${cache_path}/$(erlang_tarball) -C $(erlang_build_path) --strip-components=1
 
   echo "THE BUILD PATH HAS: "
+  echo `ls -la $(erlang_build_path)`
+
   echo "BUILD PATH IS $(erlang_build_path)"
   ls $(erlang_build_path)
 
